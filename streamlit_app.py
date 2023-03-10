@@ -55,7 +55,7 @@ if streamlit.button('Get Fruit Load List'):
    my_data_rows = get_fruit_load_list()
    streamlit.dataframe(my_data_rows)
    
-streamlit.stop()
+
 
 
 
@@ -64,4 +64,4 @@ streamlit.write('The user entered ', fruit_choice)
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "jackfruit")
 
-my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('jackfruit', 'papaya', 'kiwi', 'guava')")
