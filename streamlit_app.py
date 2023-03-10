@@ -64,4 +64,4 @@ streamlit.write('The user entered ', fruit_choice)
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "jackfruit")
 
-my_cur.execute("insert into FRUIT_LOAD_LIST values ('jackfruit', 'papaya', 'kiwi', 'guava')")
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('jackfruit')")
