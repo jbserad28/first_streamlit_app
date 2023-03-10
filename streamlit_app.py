@@ -40,6 +40,8 @@ try:
 except URLError as e:
    streamlit.error()
 
+my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cur = my_cnx.cursor()
 my_cur.execute("insert into fruit_load_list values ('jackfruit')")
 
 streamlit.stop()  
