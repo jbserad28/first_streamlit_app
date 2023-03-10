@@ -42,7 +42,7 @@ except URLError as e:
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("insert into fruit_load_list values ('kiwi')")
+my_cur.execute("insert into fruit_load_list values ('guava')")
 
 streamlit.stop()  
 streamlit.header("The fruit load list conatins:")
